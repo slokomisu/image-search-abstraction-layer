@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.0",
-    "mongoose-simpledb": "^5.1.0",
-    "node-bing-api": "^2.4.1"
+    "flickrapi": "^0.6.0",
+    "mongoose": "^4.6.0",
+    "mongoose-simpledb": "^5.1.0"
   }
 }
