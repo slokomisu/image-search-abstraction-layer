@@ -14,7 +14,7 @@ var Flickr = require('flickrapi'),
 
 
 
-
+app.use(express.static('public'));
 
 
 
