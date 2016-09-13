@@ -1,5 +1,10 @@
 var express = require('express');
 var simpledb = require('mongoose-simpledb');
+var mongooseOptions = {
+    connectionString: process.env.MONGODB_URI
+}
+
+
 var Flickr = require('flickrapi'),
     flickrOptions = {
         api_key: process.env.FLICKR_APIKEY,
@@ -14,9 +19,11 @@ var Flickr = require('flickrapi'),
 
 
 
+
+
 var app = express();
 
-simpledb.init(function (err, db) {
+simpledb.init(mongooseOptions, function (err, db) {
     if (err) {
         console.log(err);
     }
